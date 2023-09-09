@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import OrgChart from '@balkangraph/orgchart.js';
 type MyProps = OrgChart.options;
-export default class extends Component<MyProps> {
+export default class Chart extends Component<MyProps> {
     private divRef: React.RefObject<HTMLInputElement>;
     chart: OrgChart | undefined;
 
