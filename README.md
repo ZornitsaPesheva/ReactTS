@@ -41,16 +41,25 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Server build
 to buld on server with:
+
 npm run build --omit=dev
 
+
 or local server:
+
 npm install -g serve
+
 serve -s build
 
+
 find and delete this part form orgchart.js:
+
 "undefined"!=typeof module&&(module.exports=OrgChart),
+
 and add this at the end:
+
 export default OrgChart
+
 
 
 ## Learn More
