@@ -39,6 +39,20 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+Server build
+to buld on server with:
+npm run build --omit=dev
+
+or local server:
+npm install -g serve
+serve -s build
+
+find and delete this part form orgchart.js:
+"undefined"!=typeof module&&(module.exports=OrgChart),
+and add this at the end:
+export default OrgChart
+
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
